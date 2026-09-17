@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Pytest / Playwright artifacts (keep the folders, ignore generated contents)
+reports/*
+!reports/.gitkeep
+screenshots/*
+!screenshots/.gitkeep
+traces/*
+!traces/.gitkeep
+test-results/
+playwright-report/
+.pytest_cache/
+
+# Env / secrets
+.env
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
