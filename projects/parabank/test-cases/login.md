@@ -43,3 +43,5 @@ Be careful what you claim from that. It proves the edge blocked it. It says
 nothing about whether the login query is parameterised underneath. Testing that
 properly needs a payload that gets past the WAF, or direct access to a
 non-fronted environment. Flagging it rather than recording a clean pass.
+
+**Evidence:** `screenshots/login/`

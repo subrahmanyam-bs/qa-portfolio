@@ -128,6 +128,16 @@ be against a real product.
 
 ---
 
+## Skills Demonstrated
+
+- Functional UI testing across four modules (Registration, Login, Transfer Funds, Bill Pay), positive/negative/boundary cases.
+- REST API testing: request/response validation, status-code correctness, schema checks, Postman + Newman.
+- SOAP API testing: WSDL inspection, envelope construction, SoapUI.
+- Cross-validation: reconciling UI-visible state against API responses for the same underlying data.
+- Defect reporting: 15 reproduced, evidenced bugs, clustered by root cause rather than left as an unsorted list.
+- Test data and environment management on a shared public sandbox (documented resets, drift, and irreversible states).
+- Building a runnable regression collection where assertions are pinned to known bug IDs.
+
 ## Folder layout
 
 ```
@@ -207,4 +217,4 @@ this stays reproducible.
 
 ## License
 
-MIT. See the LICENSE file at the root of this repository.
+No license file is included. This is personal portfolio work, shared for reading and review, not licensed for reuse.

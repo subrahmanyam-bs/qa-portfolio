@@ -30,6 +30,32 @@ There's no public Medusa sandbox out there with an exposed Store/Admin API and p
 | **Redis** | Not installed / not configured. Medusa falls back to its in-memory event bus and locking module ("Local Event Bus installed. This is not recommended for production.") | Verified from server startup logs |
 | **Scaffolding tool** | `create-medusa-app@2.19.0` (official Medusa installer), backend + admin only, no Next.js storefront installed locally | Verified |
 
+### Reproduction Steps
+
+To stand up the same local environment:
+
+```bash
+# 1. Provision an isolated local PostgreSQL 17 instance on port 5434,
+#    separate from anything else on the machine
+createdb -h localhost -p 5434 medusa_qa
+
+# 2. Scaffold Medusa v2, backend + admin only (skip the Next.js storefront prompt)
+npx create-medusa-app@2.19.0
+
+# 3. If the install fails with native-dependency postinstall crashes
+#    (esbuild, @swc/core — see the test plan's Risks section), retry with:
+npm install --ignore-scripts
+#    then rebuild the native packages one at a time rather than concurrently.
+
+# 4. Point the generated project's .env at the database from step 1
+#    (DATABASE_URL=postgres://<user>@localhost:5434/medusa_qa), then start it:
+npx medusa develop
+```
+
+Backend comes up at `http://localhost:9000`, Admin dashboard at `http://localhost:9000/app`. No
+Redis is required for a single local instance — Medusa falls back to its in-memory event bus and
+logs a warning that this isn't suitable for production, which is expected here.
+
 ### Frontend / Storefront
 No storefront was installed in the local environment (see Section 9, "Known limitations"). For storefront-style, customer-facing UI observation, the **official public Medusa Next.js Starter demo** was used:
 

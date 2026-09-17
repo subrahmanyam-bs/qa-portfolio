@@ -2,7 +2,21 @@
 
 ## QA Analyst | Manual Testing | API Testing | SQL | Automation
 
+**Bala Subrahmanyam** · bala.subrahmanyam.9b@gmail.com
+
 This repository serves as an index of my QA testing projects and technical work.
+
+## At a Glance
+
+| Metric | Total |
+|---|---|
+| Test cases documented across all 5 projects | 282 |
+| Real, reproduced defects found (medusa + parabank + orangehrm) | 19 |
+
+demo-merchant-platform's 23 test cases are explicitly documentation-only (no execution claimed);
+saucedemo's 25 are automated regression tests, not defect-hunting. See each project's own README
+for its actual pass/fail breakdown — this table is just a portfolio-wide count, not a claim that
+every number means the same thing.
 
 ## Projects
 
@@ -17,10 +31,10 @@ This repository serves as an index of my QA testing projects and technical work.
 ## Skills
 
 - Manual Testing
-- API Testing
+- API Testing (REST & SOAP)
 - SQL
 - Postman
 - Playwright
 - Python
-- JIRA
+- CI/CD (GitHub Actions)
 - Git

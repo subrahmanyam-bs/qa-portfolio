@@ -61,6 +61,19 @@ To maintain professional transparency:
 
 ---
 
+## Tools / Environment
+
+| Item | Value |
+| :--- | :--- |
+| Application under test | [OrangeHRM Open Source Demo](https://opensource-demo.orangehrmlive.com/web/index.php/auth/login) |
+| Browser | Google Chrome v133.0 |
+| Operating System | Windows 11 |
+| Device | Desktop/Laptop |
+| Test account | Demo Admin account (public demo credentials) |
+| Documentation | Markdown, Git |
+
+---
+
 ## Repository Structure
 ```text
 orangehrm-manual-testing/
@@ -71,7 +84,10 @@ orangehrm-manual-testing/
 │   └── module-analysis.md              # Requirements and functional analysis
 │
 ├── test-plan/
-│   └── orangehrm-test-plan.md          # Test strategy and scope per module
+│   └── orangehrm-test-plan.md          # Formal test plan for the Login module. PIM/Leave/Admin
+│                                        # coverage is planned and tracked via each module's Test
+│                                        # Conditions matrix in requirements/module-analysis.md,
+│                                        # not a separate formal test-plan document per module.
 │
 ├── test-cases/
 │   ├── login/                          # Test cases for the Login module (Completed)
@@ -106,7 +122,7 @@ orangehrm-manual-testing/
 - **PIM Test Cases**: Completed
 - **PIM Execution**: Completed (14 passed, 0 failed, 0 not executed)
 - **Defects**: 0
-- **Evidence**: 4 Screenshots captured (`TC-PIM-001`, `TC-PIM-002`, `TC-PIM-005`, `TC-PIM-010`, `TC-PIM-014`)
+- **Evidence**: 5 Screenshots captured (`TC-PIM-001`, `TC-PIM-002`, `TC-PIM-005`, `TC-PIM-010`, `TC-PIM-014`)
 - **Test Summary**: Completed
 
 ### Leave Module Status Dashboard

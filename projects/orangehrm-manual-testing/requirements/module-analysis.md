@@ -63,7 +63,9 @@ This document captures the requirements, UI components, inputs, navigation, vali
 ### 7. Risks and Open Questions
 
 #### Observed Risks
-*No risks observed yet (awaiting active exploration).*
+No functional or behavioral risks were identified from the Login module exploration itself.
+Environment-level risks (shared demo instance, availability) are tracked separately under
+"Testing Risks" below.
 
 #### Testing Risks
 - **Shared/Public Environment**: The shared/public demo environment may be modified or reset independently of this testing activity, which may affect test reproducibility.
@@ -127,6 +129,8 @@ This section captures the functional components, user flows, business logic, val
 - **Optional/Custom Configurations**: Configuration sub-menus to adjust fields, custom fields, data import, reporting methods, and termination reasons.
 - **Reports Dashboard**: Sub-module used to define and generate custom employee profile reports.
 
+**Exploratory evidence**: [explore_pim_list.png](../test-execution/screenshots/explore_pim_list.png) (Employee List Page), [explore_pim_add.png](../test-execution/screenshots/explore_pim_add.png) (Add Employee Page)
+
 ### 2. User Flows
 - **Create Employee Profile**: Input names and ID, select profile image, and save.
 - **Create Employee Profile with Login Credentials**: Input names, toggle the credentials switch, input credentials (username, password, matching confirmations), and save.
@@ -186,6 +190,8 @@ This section captures the functional components, user flows, business logic, val
 - **My Leave List**: Personal dashboard for employees to view their active leave status.
 - **Leave Entitlements**: Section to add or configure leave balances per employee or group.
 
+**Exploratory evidence**: [explore_leave_list.png](../test-execution/screenshots/explore_leave_list.png) (Leave List Dashboard), [explore_leave_assign.png](../test-execution/screenshots/explore_leave_assign.png) (Assign Leave Page), [explore_leave_apply.png](../test-execution/screenshots/explore_leave_apply.png) (My Leave List / apply flow)
+
 ### 2. User Flows
 - **Assigning Leave**: Enter Employee Name, select Leave Type, input date range (From Date, To Date), check Leave Balance (read-only), add Comments, and click Assign.
 - **Filtering Leave List**: Select date range, select status checkboxes (Rejected, Cancelled, Pending Approval, Scheduled, Taken), select Leave Type, input Employee Name, and click Search.
@@ -239,6 +245,8 @@ This section captures the functional components, user flows, business logic, val
 - **System Users Dashboard**: Used to search and filter system user accounts (by Username, User Role, Employee Name, and Status) and delete records from the grid.
 - **Add User Page**: Panel form to register new system credentials and assign them to an employee profile.
 - **Organization & Configurations**: Configuration sections for structural job settings, qualifications, nationalities, corporate branding, and email configuration.
+
+**Exploratory evidence**: [explore_admin_list.png](../test-execution/screenshots/explore_admin_list.png) (System Users Dashboard), [explore_admin_add.png](../test-execution/screenshots/explore_admin_add.png) (Add User Page)
 
 ### 2. User Flows
 - **Add System User**: Select User Role (Admin/ESS), autocomplete select Employee Name, select Status (Enabled/Disabled), input unique Username, enter Password, confirm password, and click Save.
