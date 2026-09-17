@@ -4,6 +4,8 @@
 
 **Bala Subrahmanyam** · bala.subrahmanyam.9b@gmail.com
 
+Seeking a QA Analyst / QA Automation role where I can apply manual and automated testing skills to help ship reliable software.
+
 This repository serves as an index of my QA testing projects and technical work.
 
 ## At a Glance
@@ -31,7 +33,7 @@ every number means the same thing.
 ## Skills
 
 - Manual Testing
-- API Testing (REST & SOAP)
+- API Testing
 - SQL
 - Postman
 - Playwright
